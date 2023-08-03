@@ -25,5 +25,8 @@ public class MOVES : MonoBehaviour
         if ( Input.GetKey("right")) {  transform.Rotate( 3, 0, 0 );  }
         // 按住 右鍵 時，物件每個 frame 以自身 y 軸為軸心旋轉 3 度
 
+        if (Input.GetKey("A")) { transform.Rotate(0, 3, 0); }
+        // 按住 右鍵 時，物件每個 frame 以自身 y 軸為軸心旋轉 3 度
+
     }
 }
