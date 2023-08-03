@@ -14,11 +14,16 @@ public class MOVES : MonoBehaviour
     void Update()
     {
         if (Input.GetKey("up")) { transform.Translate(0, 0.1f, 0); }
-        // «ö¦í ¤WÁä ®É¡Aª«¥ó¨C­Ó frame ´Â¦Û¨­ z ¶b¤è¦V²¾°Ê 0.1 ¤½¤Ø
+        // æŒ‰ä½ ä¸Šéµ æ™‚ï¼Œç‰©ä»¶æ¯å€‹ frame æœè‡ªèº« z è»¸æ–¹å‘ç§»å‹• 0.1 å…¬å°º
 
         if (Input.GetKey("down")) { transform.Translate(0, -0.1f,0 ); }
-        // «ö¦í ¤UÁä ®É¡Aª«¥ó¨C­Ó frame ´Â¦Û¨­ z ¶b¤è¦V²¾°Ê -0.1 ¤½¤Ø
+        // æŒ‰ä½ ä¸‹éµ æ™‚ï¼Œç‰©ä»¶æ¯å€‹ frame æœè‡ªèº« z è»¸æ–¹å‘ç§»å‹• -0.1 å…¬å°º
+        
+        if ( Input.GetKey("left")) {  transform.Rotate( -3, 0, 0 );  }
+        // æŒ‰ä½ å·¦éµ æ™‚ï¼Œç‰©ä»¶æ¯å€‹ frame ä»¥è‡ªèº« y è»¸ç‚ºè»¸å¿ƒæ—‹è½‰ -3 åº¦
 
+        if ( Input.GetKey("right")) {  transform.Rotate( 3, 0, 0 );  }
+        // æŒ‰ä½ å³éµ æ™‚ï¼Œç‰©ä»¶æ¯å€‹ frame ä»¥è‡ªèº« y è»¸ç‚ºè»¸å¿ƒæ—‹è½‰ 3 åº¦
 
     }
 }
